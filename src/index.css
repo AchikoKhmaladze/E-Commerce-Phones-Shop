@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: rubik;
+}
+
+.items:hover .pixel-img {
+  scale: 1.05;
+  transition: 0.4s ease;
+}
+
+.pixel-img {
+  transition: 0.4s;
+}
+
+.add-to-cart {
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 800px) {
+  .items:hover .add-to-cart {
+    bottom: 0px;
+    transition: 0.3s;
+  }
+  .items:hover .prices h4,
+  .items:hover .prices p {
+    visibility: hidden;
+  }
+}
+
+.devices-div:hover .devices {
+  display: flex;
+}
+
+.hide-scroll {
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 350px) {
+  .contact {
+    display: none;
+  }
+  .header-top {
+    height: 45px;
+  }
+}
